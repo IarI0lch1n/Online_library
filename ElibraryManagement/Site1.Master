@@ -4,7 +4,8 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Online library</title>
+    <link rel="icon" href="images\Books.png" type="image/x-icon">
 
     <%--Bootstrap css--%>
     <link href="bootstrap\css\bootstrap.min.css" rel="stylesheet" />
