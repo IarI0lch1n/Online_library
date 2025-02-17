@@ -11,7 +11,8 @@
             <div class="row">
                 <div class="col-12">
                     <center>
-                        <h2>Our features</h2>43tertt
+                        <h2>Our features</h2>
+                        <h2> Hello world! </h2>
                         <p><b>Our 3 primary features - </b></p>
                     </center>
                 </div>
