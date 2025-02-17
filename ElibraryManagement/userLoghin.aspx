@@ -13,7 +13,7 @@
                       <div class="row">
                               <div class="col">
                                    <center>
-                                       <img width="150px" src="Images/SignUp.png"/>
+                                       <img width="150px" src="Images/User.png"/>
 
                                    </center>
                                      
