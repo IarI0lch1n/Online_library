@@ -2196,6 +2196,7 @@
   <ItemGroup>
     <Compile Include="adminLoghin.aspx.cs">
       <DependentUpon>adminLoghin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="adminLoghin.aspx.designer.cs">
       <DependentUpon>adminLoghin.aspx</DependentUpon>
@@ -2217,12 +2218,14 @@
     </Compile>
     <Compile Include="userLoghin.aspx.cs">
       <DependentUpon>userLoghin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="userLoghin.aspx.designer.cs">
       <DependentUpon>userLoghin.aspx</DependentUpon>
     </Compile>
     <Compile Include="userSignUp.aspx.cs">
       <DependentUpon>userSignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="userSignUp.aspx.designer.cs">
       <DependentUpon>userSignUp.aspx</DependentUpon>
