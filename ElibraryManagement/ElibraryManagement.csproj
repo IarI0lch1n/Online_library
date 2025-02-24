@@ -72,6 +72,8 @@
     <Content Include="Bootstrap\JS\bootstrap.bundle.min.js" />
     <Content Include="Bootstrap\JS\bootstrap.min.js" />
     <Content Include="Bootstrap\JS\popper.min.js" />
+    <Content Include="Content\Header.ascx" />
+    <Content Include="Content\Footer.ascx" />
     <Content Include="CSS\CustomStyleSheet.css" />
     <Content Include="Datables\css\dataTables.dataTables.min.css" />
     <Content Include="Datables\JS\dataTables.min.js" />
@@ -2188,6 +2190,7 @@
     <Content Include="Images\User.png" />
     <Content Include="Images\Writer.png" />
     <Content Include="userLoghin.aspx" />
+    <Content Include="UserPr.aspx" />
     <Content Include="userSignUp.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -2200,6 +2203,20 @@
     </Compile>
     <Compile Include="adminLoghin.aspx.designer.cs">
       <DependentUpon>adminLoghin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
@@ -2222,6 +2239,13 @@
     </Compile>
     <Compile Include="userLoghin.aspx.designer.cs">
       <DependentUpon>userLoghin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPr.aspx.cs">
+      <DependentUpon>UserPr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPr.aspx.designer.cs">
+      <DependentUpon>UserPr.aspx</DependentUpon>
     </Compile>
     <Compile Include="userSignUp.aspx.cs">
       <DependentUpon>userSignUp.aspx</DependentUpon>
@@ -2308,7 +2332,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Start\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
