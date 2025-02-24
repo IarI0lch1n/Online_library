@@ -5,7 +5,7 @@
 
      <div class ="container">
      <idv class="row">
-         <div class="col-md-6 mx-auto" >
+         <div class="col-md-8 mx-auto" >
 
              <div class="card">
                <div class="card-body"> 
@@ -23,7 +23,7 @@
                            <div class="row">
                                   <div class="col">
                                        <center>
-                                         <h3> Member Sign Up</h3>
+                                         <h4> User Sign Up</h4>
 
                                   </center>
             
@@ -33,28 +33,46 @@
                           <div class="row">
                                 <div class="col">
                                    <hr> </hr> 
+                               </div>
+                         </div>
 
-             
-                        </div>
+
+
+                           <div class="row">
+                                 <div class="col-md-6 ">
+                                      <label> Full-Name </label>
+                                       <asp:TextBox Cssclass="form-control" ID="TextBox3"
+                                           runat="server" placeholder="Full-Name"></asp:TextBox>
+                                            </div>
+                             
+                                     
+
+                            <div class="col-md-6  ">
+
+                                    <label> Date of Birth </label> 
+                                        <div class="form-group">   
+                                          <asp:TextBox Cssclass="form-control" ID="TextBox1"
+                                             runat="server" placeholder="Date of Birth" TextMode="Date"></asp:TextBox>
+                                </div>
+
+                            </div>
+                          </div>
+
+                       
                     </div>
+
+
+
+
+
 
                     <div class="row">
                         <div class="col">
-                            <label>  </label>
-
-                             <div class="form-group">
-                                 <asp:TextBox Cssclass="form-control" ID="TextBox1"
-                                     runat="server" placeholder="Member ID"></asp:TextBox>
-                             </div>
+                           
 
 
 
-                             <label>  </label>
-
-                             <div class="form-group">   
-                                 <asp:TextBox Cssclass="form-control" ID="TextBox2"
-                                    runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
-                             </div>
+                             
 
                 <hr style="border: none; height: 1px; margin: 20px 0; background-color: transparent;">
 
