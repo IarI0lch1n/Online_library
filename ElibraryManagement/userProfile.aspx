@@ -1,11 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="userSignUp.aspx.cs" Inherits="ElibraryManagement.userSignUp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="userProfile.aspx.cs" Inherits="ElibraryManagement.userProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-     <div class ="container">
+
+         <div class ="container-fluid">
      <div class="row">
-         <div class="col-md-8 mx-auto" >
+         <div class="col-md-5" >
 
 
              <div class="card">
@@ -24,12 +25,17 @@
                            <div class="row">
                                   <div class="col">
                                        <center>
-                                         <h4> User Sign Up</h4>
+
+                                         <h4> Your Profile </h4>
+                                         <span>Account Status -  </span>
+                                           <asp:Label class="  badge rounded-pill bg-info p-2 text-white" 
+                                               ID="Label1" runat="server" Text="Your Status"></asp:Label>
+
 
                                   </center>
             
                             </div>
-                       </div>
+                       </div>   
 
                           <div class="row">
                                 <div class="col">
@@ -145,25 +151,36 @@
 
 
 
-                             <div class="row">
-          <div class="col-md-6 ">
-            <label> User ID </label>
-                 <asp:TextBox class="form-control" ID="TextBox8"
-                          runat="server" placeholder="  User ID "></asp:TextBox>
-          </div>
-   
-           
+                   <div class="row">
+                       <div class="col-md-4 ">
+                           <label>User ID </label>
+                           <asp:TextBox class="form-control" ID="TextBox8"
+                               runat="server" placeholder="  User ID " ReadOnly="True"></asp:TextBox>
+                       </div>
 
-<div class="col-md-6  ">
 
-         <label> Password </label> 
-          <div class="form-group">   
-              <asp:TextBox class="form-control" ID="TextBox9"
-                 runat="server" placeholder="Password " TextMode="Password"></asp:TextBox>
 
-           </div>   
-        </div>
-   </div>
+                       <div class="col-md-4  ">
+
+                           <label>Old Password </label>
+                           <div class="form-group">
+                               <asp:TextBox class="form-control" ID="TextBox9"
+                                   runat="server" placeholder="Password " TextMode="Password"></asp:TextBox>
+
+                           </div>
+                       </div>
+
+                       <div class="col-md-4  ">
+
+                           <label> New Password </label>
+                           <div class="form-group">
+                               <asp:TextBox class="form-control" ID="TextBox10"
+                                   runat="server" placeholder="Password " TextMode="Password"></asp:TextBox>
+
+                           </div>
+                       </div>
+
+                   </div>
 
 
                     <div class="row">
@@ -177,9 +194,12 @@
                 <hr style="border: none; height: 1px; margin: 20px 0; background-color: transparent;">
 
                             <div class ="form-group">
-                                <asp:Button class="btn btn-success btn-lg  d-block w-100 " 
-                                    ID="Button1" runat="server" Text="Sign Up" />
+                                <center> 
+                                <asp:Button class="btn btn-primary btn-lg  d-block w-50 " 
+                                    ID="Button1" runat="server" Text="Update " />
+                                    </center>
                             </div>   
+                            
 
                   <hr style="border: none; height: 1px; margin: 20px 0; background-color: transparent;">
 
@@ -197,6 +217,116 @@
 
              <a href="Homepage.aspx"> Back to Home Page </a> <br><br>
          </div>
+
+         <div class="col-md-7">
+
+                 <div class="card">
+      <div class="card-body"> 
+
+          <div class="row">
+                  <div class="col">
+                       <center>
+                           <img width="100px" src="Images/Books.png"/>
+
+                       </center>
+                         
+                  </div>
+          </div>
+
+                  <div class="row">
+                         <div class="col">
+                              <center>
+
+                                <h4> Your read books </h4>
+                                
+                                  <asp:Label class="  badge rounded-pill bg-info p-2 text-white" 
+                                      ID="Label2" runat="server" Text="Your books info "></asp:Label>
+
+
+                         </center>
+   
+                   </div>
+              </div>   
+
+                 <div class="row">
+                       <div class="col">
+                          <hr> </hr> 
+                      </div>
+                </div>
+
+           
+               <div class="row">
+                  <div class="col">
+                      <asp:GridView  class="table table-striped table-bordered"
+                          ID="GridView1" runat="server"></asp:GridView>
+                     <!-- это как пример, будет сделано вместе с базой данных (СЕЙЧАС КАК ПРИМЕР )-->
+                      <table class="table">
+                          <thead>
+                              <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                       <!-- это как пример, будет сделано вместе с базой данных (СЕЙЧАС КАК ПРИМЕР )-->
+                  </div>
+               </div>
+
+
+                  
+
+              
+           
+
+                    
+
+
+
+
+                  
+
+                     
+
+
+
+
+
+
+
+
+
+         
+
+
+           
+
+
+
+      </div>
+    </div>
+
+         </div> 
 
      </div>
  </div>
