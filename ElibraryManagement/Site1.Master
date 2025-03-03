@@ -19,14 +19,6 @@
     <%--Custom style css--%>
     <link href="css\CustomStyleSheet.css" rel="stylesheet" />
 
-
-    <script src="bootstrap\js\bootstrap.bundle.min.js"></script>
-
-    <script src="bootstrap\js\bootstrap.min.js"></script>
-
-    <script src="bootstrap\js\popper.min.js"></script>
-
-
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -114,4 +106,9 @@
         </footer>
     </form>
 </body>
+    <script src="bootstrap\js\bootstrap.bundle.min.js"></script>
+
+    <script src="bootstrap\js\bootstrap.min.js"></script>
+
+    <script src="bootstrap\js\popper.min.js"></script>
 </html>
