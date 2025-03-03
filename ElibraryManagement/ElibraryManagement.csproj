@@ -2210,11 +2210,6 @@
     <Content Include="Images\User.png" />
     <Content Include="Images\Writer.png" />
     <Content Include="userLoghin.aspx" />
-<<<<<<< HEAD
-    <Content Include="userProfile.aspx" />
-=======
-    <Content Include="UserPr.aspx" />
->>>>>>> 799314005a1d1ef101970b36bee60fa5371f0356
     <Content Include="userSignUp.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -2235,28 +2230,6 @@
     <Compile Include="adminLoghin.aspx.designer.cs">
       <DependentUpon>adminLoghin.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="AdminPublisherManagement.aspx.cs">
-      <DependentUpon>AdminPublisherManagement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdminPublisherManagement.aspx.designer.cs">
-      <DependentUpon>AdminPublisherManagement.aspx</DependentUpon>
-=======
-    <Compile Include="Content\Header.ascx.cs">
-      <DependentUpon>Header.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\Header.ascx.designer.cs">
-      <DependentUpon>Header.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\Footer.ascx.cs">
-      <DependentUpon>Footer.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\Footer.ascx.designer.cs">
-      <DependentUpon>Footer.ascx</DependentUpon>
->>>>>>> 799314005a1d1ef101970b36bee60fa5371f0356
     </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
@@ -2281,21 +2254,6 @@
     <Compile Include="userLoghin.aspx.designer.cs">
       <DependentUpon>userLoghin.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="userProfile.aspx.cs">
-      <DependentUpon>userProfile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="userProfile.aspx.designer.cs">
-      <DependentUpon>userProfile.aspx</DependentUpon>
-=======
-    <Compile Include="UserPr.aspx.cs">
-      <DependentUpon>UserPr.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserPr.aspx.designer.cs">
-      <DependentUpon>UserPr.aspx</DependentUpon>
->>>>>>> 799314005a1d1ef101970b36bee60fa5371f0356
     </Compile>
     <Compile Include="userSignUp.aspx.cs">
       <DependentUpon>userSignUp.aspx</DependentUpon>
